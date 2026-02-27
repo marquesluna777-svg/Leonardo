@@ -3,6 +3,9 @@ import { motion } from 'motion/react';
 import { MessageCircle } from 'lucide-react';
 
 export const Hero = () => {
+  // Vamos tentar com require ao invés de import
+  const flaviaImg = new URL('../assets/images/flavia.jpeg', import.meta.url).href;
+
   return (
     <motion.section 
       initial={{ opacity: 0, y: 10 }}
@@ -15,7 +18,7 @@ export const Hero = () => {
         <div className="flex-1">
           <div className="inline-flex items-center gap-3 px-2 py-1 rounded-full bg-app-accent/10 border border-app-accent/20 mb-4">
             <div className="w-6 h-6 rounded-full overflow-hidden border border-app-accent/20">
-              <img src="/flavia.jpg" alt="Flavia" className="w-full h-full object-cover" />
+              <img src={flaviaImg} alt="Flavia" className="w-full h-full object-cover" />
             </div>
             <span className="text-[10px] font-bold uppercase tracking-widest text-app-accent pr-1">Profissional Flavia</span>
           </div>
@@ -39,14 +42,12 @@ export const Hero = () => {
         
         <div className="w-32 h-32 md:w-48 md:h-48 rounded-2xl overflow-hidden border border-app-border shrink-0">
           <img 
-            src="/Imagem/flavia.jpeg" 
+            src={flaviaImg}
             alt="Flavia" 
             className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
           />
         </div>
       </div>
     </motion.section>
   );
 };
-

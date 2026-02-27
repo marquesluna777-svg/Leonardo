@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Instagram, Facebook, MessageCircle, MapPin, Phone } from 'lucide-react';
+import flaviaImg from '../assets/images/flavia.jpeg'; // <-- IMPORTANDO A IMAGEM
 
 export const Footer = () => {
   return (
@@ -11,7 +12,7 @@ export const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center">
-                <img src="/Imagem/flavia.jpeg" alt="Logo" className="w-full h-full object-cover" />
+                <img src={flaviaImg} alt="Logo" className="w-full h-full object-cover" /> {/* <-- USANDO A IMAGEM IMPORTADA */}
               </div>
               <span className="text-lg font-serif font-bold tracking-tight text-app-text uppercase">Toque da Beleza</span>
             </div>
@@ -27,7 +28,7 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-3 text-app-muted">
                 <Phone className="w-5 h-5 text-app-accent shrink-0" />
-                <p className="text-sm">(11) 99999-9999</p>
+                <p className="text-sm">(11) 94954-0896</p>
               </div>
             </div>
           </div>
@@ -89,4 +90,3 @@ export const Footer = () => {
     </footer>
   );
 };
-

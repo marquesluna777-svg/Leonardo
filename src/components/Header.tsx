@@ -1,6 +1,7 @@
 import React from 'react';
 import { Instagram, Moon, Sun, Heart } from 'lucide-react';
 import { useTheme } from '../ThemeContext';
+import logoImg from '../assets/images/logo.jpeg'; // <-- IMPORTANDO A IMAGEM
 
 export const Header = () => {
   const { theme, setTheme } = useTheme();
@@ -11,13 +12,14 @@ export const Header = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center">
-              <img src="/Imagem/logo.jpeg" alt="Toque da Beleza Logo" className="w-full h-full object-cover" />
+              <img src={logoImg} alt="Toque da Beleza Logo" className="w-full h-full object-cover" /> {/* <-- USANDO A IMAGEM IMPORTADA */}
             </div>
             <span className="text-lg font-serif font-bold tracking-tight text-app-text">
               TOQUE DA <span className="text-app-accent">BELEZA</span>
             </span>
           </div>
           
+          {/* resto do código permanece igual */}
           <nav className="flex items-center gap-4 sm:gap-6">
             <div className="flex items-center bg-app-card rounded-full p-1 border border-app-border">
               <button 

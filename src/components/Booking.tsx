@@ -66,7 +66,7 @@ export const Booking = () => {
 
   // FUNÇÃO PARA TESTAR (OPCIONAL)
   const testarDireto = () => {
-    const testUrl = `${APPS_SCRIPT_URL}?nome=TESTE&telefone=1199999999&servico=TESTE&data=2024-01-20&horario=14:00&_=${Date.now()}`;
+    const testUrl = `${APPS_SCRIPT_URL}?nome=TESTE&telefone=11949540896&servico=TESTE&data=2024-01-20&horario=14:00&_=${Date.now()}`;
     window.open(testUrl, '_blank');
   };
 
@@ -124,7 +124,7 @@ export const Booking = () => {
             <input 
               required
               type="tel" 
-              placeholder="(11) 99999-9999"
+              placeholder="(11) 94954-0896"
               className="w-full bg-app-bg border border-app-border rounded-xl py-3 px-4 focus:outline-none focus:border-app-accent"
               value={formData.phone}
               onChange={(e) => setFormData({...formData, phone: e.target.value})}
