@@ -30,7 +30,7 @@ export const Hero = () => {
           </p>
           
           <a 
-            href="https://wa.me/5511999999999" 
+            href="https://wa.me/5511949540896" 
             target="_blank" 
             rel="noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-green-600/10 border border-green-600/20 rounded-xl text-green-600 hover:bg-green-600 hover:text-white transition-all group"

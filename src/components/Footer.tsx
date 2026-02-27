@@ -22,8 +22,8 @@ export const Footer = () => {
                 <MapPin className="w-5 h-5 text-app-accent shrink-0 mt-0.5" />
                 <div className="text-sm leading-relaxed">
                   <p className="text-app-text font-medium">Nosso Endereço</p>
-                  <p>Rua das Flores, 123 • Bairro Estética</p>
-                  <p>São Paulo, SP • CEP 01234-567</p>
+                  <p>Rua das Pedras,79 • Bairro Jardim Paulistano</p>
+                  <p>São Paulo, SP • CEP 02812-270</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 text-app-muted">
@@ -40,7 +40,7 @@ export const Footer = () => {
               <motion.a 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://instagram.com" 
+                href="https://www.instagram.com/mk.flaviamarques/" 
                 target="_blank" 
                 rel="noreferrer"
                 className="flex items-center gap-2 px-4 py-2 bg-app-card border border-app-border rounded-full text-app-muted hover:border-app-accent hover:text-app-accent transition-all group"
@@ -51,7 +51,7 @@ export const Footer = () => {
               <motion.a 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://wa.me/5511999999999" 
+                href="https://wa.me/5511949540896" 
                 target="_blank" 
                 rel="noreferrer"
                 className="flex items-center gap-2 px-4 py-2 bg-app-card border border-app-border rounded-full text-app-muted hover:border-green-500 hover:text-green-500 transition-all group"
@@ -62,7 +62,7 @@ export const Footer = () => {
               <motion.a 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://facebook.com" 
+                href="https://www.facebook.com/flavia.cristina.5249" 
                 target="_blank" 
                 rel="noreferrer"
                 className="flex items-center gap-2 px-4 py-2 bg-app-card border border-app-border rounded-full text-app-muted hover:border-blue-500 hover:text-blue-500 transition-all group"

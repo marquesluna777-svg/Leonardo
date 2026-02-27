@@ -66,7 +66,7 @@ export const Booking = () => {
 
   // FUNÇÃO PARA TESTAR (OPCIONAL)
   const testarDireto = () => {
-    const testUrl = `${APPS_SCRIPT_URL}?nome=TESTE&telefone=11949540896&servico=TESTE&data=2024-01-20&horario=14:00&_=${Date.now()}`;
+    const testUrl = `${APPS_SCRIPT_URL}?nome=TESTE&telefone=11977777777&servico=TESTE&data=2024-01-20&horario=14:00&_=${Date.now()}`;
     window.open(testUrl, '_blank');
   };
 

@@ -45,7 +45,7 @@ export const Header = () => {
               </button>
             </div>
 
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-app-muted hover:text-app-accent transition-colors">
+            <a href="https://www.instagram.com/mk.flaviamarques/" target="_blank" rel="noreferrer" className="text-app-muted hover:text-app-accent transition-colors">
               <Instagram className="w-5 h-5" />
             </a>
           </nav>
