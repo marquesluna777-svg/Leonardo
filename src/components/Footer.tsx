@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Instagram, Facebook, MessageCircle, MapPin, Phone } from 'lucide-react';
-import flaviaImg from '../assets/images/flavia.jpeg'; // <-- IMPORTANDO A IMAGEM
 
 export const Footer = () => {
   return (
@@ -12,7 +11,7 @@ export const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center">
-                <img src={flaviaImg} alt="Logo" className="w-full h-full object-cover" /> {/* <-- USANDO A IMAGEM IMPORTADA */}
+                <img src="/logo.png" alt="Logo" className="w-full h-full object-cover" />
               </div>
               <span className="text-lg font-serif font-bold tracking-tight text-app-text uppercase">Toque da Beleza</span>
             </div>
@@ -22,13 +21,13 @@ export const Footer = () => {
                 <MapPin className="w-5 h-5 text-app-accent shrink-0 mt-0.5" />
                 <div className="text-sm leading-relaxed">
                   <p className="text-app-text font-medium">Nosso Endereço</p>
-                  <p>Rua das Pedras,79 • Bairro Jardim Paulistano</p>
-                  <p>São Paulo, SP • CEP 02812-270</p>
+                  <p>Rua das Flores, 123 • Bairro Estética</p>
+                  <p>São Paulo, SP • CEP 01234-567</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 text-app-muted">
                 <Phone className="w-5 h-5 text-app-accent shrink-0" />
-                <p className="text-sm">(11) 94954-0896</p>
+                <p className="text-sm">(11) 99999-9999</p>
               </div>
             </div>
           </div>
@@ -40,7 +39,7 @@ export const Footer = () => {
               <motion.a 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://www.instagram.com/mk.flaviamarques/" 
+                href="https://instagram.com" 
                 target="_blank" 
                 rel="noreferrer"
                 className="flex items-center gap-2 px-4 py-2 bg-app-card border border-app-border rounded-full text-app-muted hover:border-app-accent hover:text-app-accent transition-all group"
@@ -51,7 +50,7 @@ export const Footer = () => {
               <motion.a 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://wa.me/5511949540896" 
+                href="https://wa.me/5511999999999" 
                 target="_blank" 
                 rel="noreferrer"
                 className="flex items-center gap-2 px-4 py-2 bg-app-card border border-app-border rounded-full text-app-muted hover:border-green-500 hover:text-green-500 transition-all group"
@@ -62,7 +61,7 @@ export const Footer = () => {
               <motion.a 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://www.facebook.com/flavia.cristina.5249" 
+                href="https://facebook.com" 
                 target="_blank" 
                 rel="noreferrer"
                 className="flex items-center gap-2 px-4 py-2 bg-app-card border border-app-border rounded-full text-app-muted hover:border-blue-500 hover:text-blue-500 transition-all group"
@@ -90,3 +89,4 @@ export const Footer = () => {
     </footer>
   );
 };
+

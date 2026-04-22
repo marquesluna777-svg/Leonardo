@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import logoImg from '../assets/images/logo.jpeg'; // <-- IMPORTANDO O LOGO
-import flaviaImg from '../assets/images/flavia.jpeg'; // <-- IMPORTANDO A FOTO DA FLAVIA
+import logoImg from '../assets/images/logo.jpeg';
+import flaviaImg from '../assets/images/flavia.jpeg';
 
 export const SplashScreen = () => {
   return (
@@ -22,7 +22,7 @@ export const SplashScreen = () => {
           className="flex flex-col items-center"
         >
           <div className="w-32 h-32 mb-6 rounded-2xl overflow-hidden shadow-2xl shadow-pink-600/20">
-            <img src={logoImg} alt="Logo" className="w-full h-full object-cover" /> {/* <-- USANDO A IMAGEM IMPORTADA */}
+            <img src={logoImg} alt="Logo" className="w-full h-full object-cover" />
           </div>
           
           <motion.h1 
@@ -48,7 +48,7 @@ export const SplashScreen = () => {
             className="flex items-center gap-3 justify-center"
           >
             <div className="w-8 h-8 rounded-full overflow-hidden border border-pink-500/30">
-              <img src={flaviaImg} alt="Flavia" className="w-full h-full object-cover" /> {/* <-- USANDO A IMAGEM IMPORTADA */}
+              <img src={flaviaImg} alt="Flavia" className="w-full h-full object-cover" />
             </div>
             <p className="text-zinc-400 text-xs uppercase tracking-[0.5em] font-bold">
               Por <span className="text-white">Flavia Estética</span>

@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
-// IMPORTANDO AS IMAGENS DA GALERIA - Extensão .jpeg
+// IMPORTANDO AS IMAGENS DA GALERIA
 import foto1 from '../assets/images/galeria/foto1.jpeg';
 import foto2 from '../assets/images/galeria/foto2.jpeg';
 import foto3 from '../assets/images/galeria/foto3.jpeg';
@@ -19,19 +21,27 @@ const PHOTOS = [
 ];
 
 export const Gallery = () => {
+  // Pegando apenas as 3 primeiras fotos para mostrar na página inicial
+  const previewPhotos = PHOTOS.slice(0, 3);
+
   return (
     <section id="galeria" className="space-y-6">
       <div className="flex items-center justify-between">
         <h3 className="text-xl font-serif text-app-text">Galeria</h3>
-        <span className="text-[10px] uppercase tracking-widest text-app-muted font-bold">Trabalhos Recentes</span>
+        <Link 
+          to="/galeria" 
+          className="group flex items-center gap-1 text-[10px] uppercase tracking-widest text-app-accent font-bold hover:gap-2 transition-all"
+        >
+          Ver Tudo
+          <ChevronRight className="w-3 h-3" />
+        </Link>
       </div>
 
       <div className="grid grid-cols-3 gap-3">
-        {PHOTOS.map((photo) => (
-          <motion.div
+        {previewPhotos.map((photo) => (
+          <Link
             key={photo.id}
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.2 }}
+            to="/galeria"
             className="relative aspect-square rounded-xl overflow-hidden group cursor-pointer border border-app-border transition-colors duration-300"
           >
             <img 
@@ -39,11 +49,7 @@ export const Gallery = () => {
               alt={photo.title} 
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            {/* Overlay com título (opcional) */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
-              <p className="text-white text-xs font-bold uppercase tracking-widest">{photo.title}</p>
-            </div>
-          </motion.div>
+          </Link>
         ))}
       </div>
     </section>

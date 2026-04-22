@@ -11,6 +11,8 @@
   --color-app-muted: var(--app-muted);
   --color-app-border: var(--app-border);
   --color-app-accent: var(--app-accent);
+
+  --breakpoint-xs: 480px;
 }
 
 :root {

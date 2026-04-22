@@ -1,11 +1,9 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { MessageCircle } from 'lucide-react';
+import flaviaImg from '../assets/images/flavia.jpeg'; // <-- IMPORTANDO A IMAGEM
 
 export const Hero = () => {
-  // Vamos tentar com require ao invés de import
-  const flaviaImg = new URL('../assets/images/flavia.jpeg', import.meta.url).href;
-
   return (
     <motion.section 
       initial={{ opacity: 0, y: 10 }}
@@ -30,7 +28,7 @@ export const Hero = () => {
           </p>
           
           <a 
-            href="https://wa.me/5511949540896" 
+            href="https://wa.me/5511999999999" 
             target="_blank" 
             rel="noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-green-600/10 border border-green-600/20 rounded-xl text-green-600 hover:bg-green-600 hover:text-white transition-all group"
@@ -42,7 +40,7 @@ export const Hero = () => {
         
         <div className="w-32 h-32 md:w-48 md:h-48 rounded-2xl overflow-hidden border border-app-border shrink-0">
           <img 
-            src={flaviaImg}
+            src={flaviaImg} 
             alt="Flavia" 
             className="w-full h-full object-cover"
           />
